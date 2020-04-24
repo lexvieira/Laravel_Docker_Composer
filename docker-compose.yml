@@ -28,10 +28,10 @@ services:
         volumes: 
             - ./mysql:/var/lib/mysql
         environment: 
-            MYSQL_DATABASE: covid19Databr
-            MYSQL_USER: covid19Databr
-            MYSQL_PASSWORD: HUgr%970jA7ck
-            MYSQL_ROOT_PASSWORD: Nuj6343%J693cK
+            MYSQL_DATABASE: database
+            MYSQL_USER: user
+            MYSQL_PASSWORD: password
+            MYSQL_ROOT_PASSWORD: password
             SERVICE_TAGS: dev
             SERVICE_NAME: mysql
         networks: 
