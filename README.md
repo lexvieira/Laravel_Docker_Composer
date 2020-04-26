@@ -31,8 +31,7 @@ Creating a Docker with Laravel and Composer
         7.4.1 - Set Permission (755 means full permissions for the owner and read and execute permission for others)
                 sudo chmod -R 755 *
 
->>> Include on Docker Composer and Artisan Configuration
-8 - Composer
+8 - Composer (Include on Docker Composer and Artisan Configuration)
     8.1 - composer require aschmelyun/larametrics
         docker-compose run --rm composer require aschmelyun/larametrics
     8.2 - Install Composer with Docker
