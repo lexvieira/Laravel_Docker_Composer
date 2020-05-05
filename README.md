@@ -20,6 +20,7 @@ Creating a Docker with Laravel and Composer
     3.3 - PHP over Dockerfile
 
 7 - Testing if Docker is OK (LISTEN PORTS)
+
     7.1 docker-compose build && docker-compose up -d
     7.2 sudo lsof -i -P -n | grep LISTEN
     7.3 Error Log /var/www/html/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied
