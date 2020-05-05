@@ -1,8 +1,11 @@
 Creating a Docker with Laravel and Composer
+
 1 - Clone Git Laravel Project from 
+
     1.1 git clone https://github.com/laravel/laravel.git [name of your folder | laravel-app | src | app]
 
 2 - Composer Install
+
     2.1 docker run --rm -v $(pwd)/src:/app composer install
 
 3 - Setting Permissions
@@ -14,7 +17,10 @@ Creating a Docker with Laravel and Composer
 5 - Configure the Nginx on 
     >nginx/default.conf
 
+
 6 - Creating Dockers
+
+
     3.1 - Nginx
     3.2 - Mysql
     3.3 - PHP over Dockerfile
@@ -33,6 +39,7 @@ Creating a Docker with Laravel and Composer
                 sudo chmod -R 755 *
 
 8 - Composer (Include on Docker Composer and Artisan Configuration)
+
     8.1 - composer require aschmelyun/larametrics
         docker-compose run --rm composer require aschmelyun/larametrics
     8.2 - Install Composer with Docker
@@ -47,22 +54,25 @@ Creating a Docker with Laravel and Composer
     8.4 Run using a PHP image 
         docker-compose exec php composer install
 9 - NPM
+
     9.1 - Run npm install
         docker-compose run --rm npm install
     9.2 - run npm run dev
         docker-compose run --rm npm run dev
+        
 10 - Artisan
+
     10.1 - Encrypted Sessions with key:generate
         BEFORE
         docker-compose exec php php artisan key:generate
         Application key set successfully.
         NOW - (OK)
         docker-compose run artisan key:generate
+        
 11 - Kick off Migrations with Artisan (OK)
     docker-compose run --rm artisan migrate
 
-
-ERRORS:
+#ERRORS:
 Questions about authorization to save file with php docker due permissions to local user.
 
 Update in the next Dockerfile Commit
